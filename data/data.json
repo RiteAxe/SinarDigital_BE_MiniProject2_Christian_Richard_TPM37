@@ -1,0 +1,12 @@
+{
+  "orders": [
+    {
+      "id": 1,
+      "name": "Christian",
+      "menu": "Nasi Goreng",
+      "quantity": 1,
+      "note": "tidak pedas",
+      "createdAt": "2025-11-30T14:35:06.105Z"
+    }
+  ]
+}
