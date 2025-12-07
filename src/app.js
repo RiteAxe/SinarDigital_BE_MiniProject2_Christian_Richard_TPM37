@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 const { appName } = require("./config/app.config");
 const indexRoutes = require("./routes/index");
-const apiRoutes = require("./routes/apiRoutes"); // MP1
+const apiRoutes = require("./routes/apiRoutes");
 const menuCategoryRoutes = require("./routes/menuCategoryRoutes");
 const menuItemRoutes = require("./routes/menuItemRoutes");
 const errorHandler = require("./middlewares/errorHandler");
@@ -23,9 +23,9 @@ app.use((req, res, next) => {
 });
 
 app.use("/", indexRoutes);
-app.use("/api", apiRoutes); // MP1 orders
-app.use("/categories", menuCategoryRoutes); // MP2
-app.use("/items", menuItemRoutes); // MP2
+app.use("/api", apiRoutes);
+app.use("/categories", menuCategoryRoutes);
+app.use("/items", menuItemRoutes);
 
 app.use(errorHandler);
 
